@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>RESTful API Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadAllStudents()">
+    <h2>Simple CRUD Application for Students Data</h2>
+
+    <div id="form">
+        <form>
+            <p>ID <br />
+                <input type="text" id="student_id" value="" /> <button type="button"
+                    onclick="loadOneStudent()">Read</button>
+            </p>
+            <p>First Name <br />
+                <input type="text" id="first_name" value="" />
+            </p>
+            <p>Last Name <br />
+                <input type="text" id="last_name" value="" />
+            </p>
+            <br />
+            <br />
+            <button type="button" onclick="addStudent()">Add</button>
+            <button type="button" onclick="updateStudent()">Update</button>
+            <button type="button" onclick="deleteStudent()">Delete</button>
+        </form>
+    </div>
+
+    <div id="list">
+        <p>Table with students data.</p>
+    </div>
+
+    <script src="students.js"></script>
+</body>
+
+</html>
