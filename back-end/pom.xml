@@ -77,6 +77,11 @@
 									</fileset>
 								</copy>
 								<echo message="Done!"/>
-							</tasks>
-						</configuration>
-					</execution>
+						</tasks>
+					</configuration>
+				</execution>
+			</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>
